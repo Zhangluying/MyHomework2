@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light">
+
+        <RelativeLayout >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Open..."
+                android:id="@+id/open"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ctrl-O"
+                android:id="@+id/ctrlo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Save..."
+                android:id="@+id/save"
+                android:layout_below="@id/open"
+                android:layout_alignLeft="@id/open"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ctrl-S"
+                android:id="@+id/ctrls"
+                android:layout_below="@id/ctrlo"
+                android:layout_alignRight="@id/ctrlo"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Save As..."
+                android:id="@+id/saveas"
+                android:layout_below="@id/save"
+                android:layout_alignLeft="@id/save"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ctrl-Shift-S"
+                android:id="@+id/ctrlss"
+                android:layout_below="@id/ctrls"
+                android:layout_alignRight="@id/ctrls"/>
+        </RelativeLayout>
+    </TableLayout>
+
+
+    <TableLayout android:id="@+id/table2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light">
+
+        <RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="X Import..."
+                android:id="@+id/ximport"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="    "
+                android:id="@+id/blank"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="X Export..."
+                android:id="@+id/xexport"
+                android:layout_below="@id/ximport"
+                android:layout_alignLeft="@+id/ximport"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ctrl-E"
+                android:id="@+id/ctrle"
+                android:layout_below="@id/blank"
+                android:layout_alignRight="@+id/blank"/>
+
+
+        </RelativeLayout>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="  Quit..."
+        android:id="@+id/quit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/holo_green_light" />
+
+</LinearLayout>
+
